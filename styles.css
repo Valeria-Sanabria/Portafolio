@@ -1,0 +1,112 @@
+/* Estilos básicos para el CV */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: rgb(252, 248, 248);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(247, 245, 245);
+    border-radius: 10px;
+}
+
+/* Estilos de la Cabecera */
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.photo img {
+    width: 120px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.personal-info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #9c3a21;
+}
+
+.personal-info h2 {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #121213;
+}
+
+.personal-info p {
+    margin: 5px 0;
+}
+
+.personal-info a {
+    color: #070707;
+    text-decoration: none;
+}
+
+/* Estilos de Secciones */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e60800;
+    display: inline-block;
+}
+
+section p, ul li p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 15px;
+}
+
+/* Habilidades en Grid */
+.skills-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    text-align: center;
+}
+
+.skill-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.skill-item p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .photo {
+        margin-bottom: 20px;
+    }
+}
